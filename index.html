@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta charset="UTF-8">
 		<title>Blog</title>
@@ -8,16 +8,12 @@
 	</head>
 	<body>
 
-		<h1>Components</h1>
-
-		<div id="vue-app-one">
-			<h2>Vue App One</h2>
-			<greeting></greeting>
-		</div>
-
-		<div id="vue-app-two">
-			<h2>Vue App Two</h2>
-			<greeting></greeting>
+		<div id="vue-app">
+			<h2>Refs</h2>
+			<input type="text" ref="input"/>
+			<button v-on:click="readRefs">Submit</button>
+			<p>Your favorite food: {{output}}</p>
+			<div ref="test">hello</div>
 		</div>
 
 		<script src="app.js"></script>
